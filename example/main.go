@@ -20,4 +20,13 @@ func main() {
 	province := raja.Province(10)
 	fmt.Println(province.Result)
 	fmt.Println(province.Error)
+	cities := raja.Cities()
+	fmt.Println(cities.Result)
+	fmt.Println(cities.Error)
+	cities = raja.CitiesByProvince(2)
+	fmt.Println(cities.Result)
+	fmt.Println(cities.Error)
+	city := raja.City(23)
+	fmt.Println(city.Result)
+	fmt.Println(city.Error)
 }
